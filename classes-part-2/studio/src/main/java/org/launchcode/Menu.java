@@ -27,6 +27,30 @@ public class Menu {
     public ArrayList<MenuItem> getItems() {
         return items;
     }
+
+    public void addToMenu(MenuItem item) {
+        if(items.contains(item)){
+            System.out.println("This is an duplicate item!");
+        } else {
+            items.add(item);
+        }
+    }
+
+    public void removeFromMenu(MenuItem item) {
+        items.remove(item);
+    }
+
+    public void displayMenu() {
+        for(MenuItem item : items){
+            System.out.println("\n" +item.getName());
+        }
+    }
+
+    public void displayMenuItem(MenuItem item) {
+        System.out.println(item.getName());
+    }
+
+
 }
 
 
