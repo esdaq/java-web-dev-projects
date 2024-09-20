@@ -36,5 +36,6 @@ public class Restaurant {
         //menu.removeFromMenu(pizza);
         menu.addToMenu(duplicateVeganPizza);
         menu.displayMenu();
+
     }
 }
